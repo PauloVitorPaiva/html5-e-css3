@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf)  format('opentype');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+    background-color: rgb(180, 255, 180);
+}
+
+header {
+    padding: 4px;
+    margin: -10px;
+    border: 5px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to top, #05550a, #0ba316, #4ac753);
+}
+
+nav {
+    text-align: left;
+    color: white;
+}
+
+.listacomv {
+    list-style-type: none; /* Remove os marcadores padrões */
+    padding: 0;
+}
+
+.listacomv li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.listacomv li::before {
+    content: "\2713"; /* Código Unicode para o símbolo "v" (✓) */
+    position: absolute;
+    left: 0;
+    color: green; /* Cor do símbolo */
+    font-weight: bold;
+}
+
+main {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    border: 0px;
+    border-style: solid;
+    background-color: white;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.356);
+    border-radius: 0px 0px 10px 10px;
+    text-indent: 25px;
+}
+
+.titulo {
+    color: green;
+    font-family: 'idroid', Times, serif;
+
+}
+
+.subtitulo {
+    color: green;
+    background-image: linear-gradient(to right, rgba(151, 236, 151, 0.425), white);
+    font-family: 'idroid',Times, serif;
+}
+
+.palavraimportante {
+    color: green;
+}
+
+aside {
+    color: white;
+}
+
+section {
+    border-style: solid;
+    background-color: rgba(166, 233, 166, 0.822);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.minititulo {
+    color: white;
+    background-color: #3AE07E;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.video {
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.destaque {
+    color: white;
+}
+
+#rodape {
+    background-color: green;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+    color: rgb(219, 216, 216);
+}
