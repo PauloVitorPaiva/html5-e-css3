@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>fundo fixo de tela</title>
     <style>
         body {
-            background-color: black;
+            height: 100vh;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* shorthand - background
+            color > imagem > position > repeat > [size] > attachment
+            o size n ta aplicavel ainda
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
+
+        
+
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +41,16 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus omnis repellendus placeat saepe! Provident, fugiat vel debitis perferendis praesentium assumenda et itaque quia, iusto voluptate similique doloremque, nesciunt fugit corrupti.
         Incidunt ducimus odit dolor blanditiis nobis atque illo sed tempora provident totam dolorum, expedita ab quidem pariatur laboriosam perspiciatis esse quod beatae ea fugit! Eveniet unde molestiae accusamus illum doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio repellat earum sed, nisi minima cum fugiat dignissimos dicta. Velit vero et, ut voluptate fugiat nobis incidunt dolores a atque autem?
+        Accusantium culpa ex beatae cupiditate sunt possimus debitis minima dolorem inventore aspernatur ea deleniti aut sed, a quis, tempora, pariatur voluptatibus tenetur quod. Quos vero at, quo in et eveniet?
+        Quidem aut excepturi cum eius. Atque quos labore id cum nobis alias odit ex omnis minus fuga. Aut a ipsum enim ratione, pariatur quas dolores reiciendis odit iusto voluptatum maxime!
+        Est, amet fugiat nemo voluptatem facere cumque nam quibusdam, eveniet aperiam distinctio quisquam tempore qui sint possimus iure ad sunt quis dolorum itaque maiores perspiciatis fugit a eaque. Aperiam, repudiandae!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus omnis repellendus placeat saepe! Provident, fugiat vel debitis perferendis praesentium assumenda et itaque quia, iusto voluptate similique doloremque, nesciunt fugit corrupti.
+            Incidunt ducimus odit dolor blanditiis nobis atque illo sed tempora provident totam dolorum, expedita ab quidem pariatur laboriosam perspiciatis esse quod beatae ea fugit! Eveniet unde molestiae accusamus illum doloremque.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio repellat earum sed, nisi minima cum fugiat dignissimos dicta. Velit vero et, ut voluptate fugiat nobis incidunt dolores a atque autem?
+            Accusantium culpa ex beatae cupiditate sunt possimus debitis minima dolorem inventore aspernatur ea deleniti aut sed, a quis, tempora, pariatur voluptatibus tenetur quod. Quos vero at, quo in et eveniet?
+            Quidem aut excepturi cum eius. Atque quos labore id cum nobis alias odit ex omnis minus fuga. Aut a ipsum enim ratione, pariatur quas dolores reiciendis odit iusto voluptatum maxime!
+            Est, amet fugiat nemo voluptatem facere cumque nam quibusdam, eveniet aperiam distinctio quisquam tempore qui sint possimus iure ad sunt quis dolorum itaque maiores perspiciatis fugit a eaque. Aperiam, repudiandae!</p>
     </main>
     
 </body>
