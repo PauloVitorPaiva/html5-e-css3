@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -26,7 +29,28 @@
             Optio rem quos cupiditate commodi asperiores repellat nihil, minus ea molestiae. Error soluta sint natus culpa, assumenda quibusdam excepturi quasi aspernatur facilis esse commodi illo consequatur dignissimos autem similique! Quis.</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde itaque atque voluptatem libero illum pariatur, magni, dolorem modi numquam corporis, necessitatibus non ipsum et optio explicabo aliquam. Placeat, quisquam quam!
             Maxime culpa animi numquam voluptates magnam tempora ab recusandae sunt id doloribus impedit ratione dicta voluptas sit cumque possimus magni officia minus obcaecati minima, ad, quod voluptatibus? Molestiae, praesentium ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum eum nulla molestias omnis nostrum repellat autem. Hic, perferendis dicta dignissimos similique quasi sint eaque eos accusamus dolorum quia voluptatum?
+            Ratione facilis soluta quas ex facere earum ipsum nobis quaerat minima voluptate cum atque deserunt adipisci vero, excepturi quasi eum temporibus dignissimos debitis autem, doloribus placeat repellat nulla! Delectus, cum.
+            Voluptatum, corporis asperiores blanditiis at ea quae perspiciatis vero obcaecati delectus recusandae, praesentium repellat dolores nulla, placeat assumenda quo sed! Perspiciatis perferendis sequi pariatur laborum nemo sapiente aspernatur cumque assumenda?</p>
         </article>
     </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768)  {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
