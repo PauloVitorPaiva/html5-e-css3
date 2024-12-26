@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap; /* Alinha os itens em linha e permite quebra */
+            align-items: flex-start; /* Alinhamento padrão para os itens */
+            height: 400px;
+        }
+
+        div.itens {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1 {
+            /* Estilos adicionais para o item 1 (se necessário) */
+            align-self: inherit;
+        }
+
+        div#i2 {
+            /* Estilos adicionais para o item 2 (se necessário) */
+            align-self: auto;
+        }
+
+        div#i3 {
+            align-self: flex-end; /* Alinha o item 3 na parte inferior */
+        }
+
+        div#i4 {
+            /* Estilos adicionais para o item 4 (se necessário) */
+            align-self: stretch;
+        }
+
+        div#i5 {
+            align-self: center; /* Centraliza o item 5 verticalmente */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="i1">a</div>
+        <div class="itens" id="i2">b</div>
+        <div class="itens" id="i3">c</div>
+        <div class="itens" id="i4">d</div>
+        <div class="itens" id="i5">e</div>
+    </div>
+</body>
+</html>
